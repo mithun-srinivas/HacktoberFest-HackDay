@@ -2,7 +2,7 @@
 
 **Theme:** Open-Source AI and Open-Weight Models
 
-Each team of 2–4 participants selects **one** problem statement. Each one is designed to be completed in about **3 hours** of build time and must result in a working demonstration at the end of the day.
+Each team of 2–4 participants selects **one** problem statement. Each one must result in a working demonstration at the end of the day.
 
 Participants with no prior coding experience are encouraged to choose Problem 1, 2 or 3.
 

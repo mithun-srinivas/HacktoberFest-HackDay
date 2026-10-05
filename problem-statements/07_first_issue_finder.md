@@ -4,7 +4,6 @@
 |---|---|
 | **Level** | Advanced (work with external web APIs) |
 | **Team size** | 2–4 participants |
-| **Duration** | Approximately 3 hours |
 | **Starter code** | [templates/07_first_issue_finder.ipynb](../templates/07_first_issue_finder.ipynb) |
 
 ---
@@ -73,7 +72,6 @@ At the final demonstration, the team must present:
 - [ ] A one-sentence explanation of what an API is and how the tool combines two of them
 - [ ] One issue selected by the team using the tool, with an outline of how they would approach it
 
-**Presentation time:** 3 minutes, followed by 1 minute of questions.
 
 ## 8. Optional Extensions
 

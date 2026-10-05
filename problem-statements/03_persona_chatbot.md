@@ -4,7 +4,6 @@
 |---|---|
 | **Level** | Beginner (modify text and settings in working starter code) |
 | **Team size** | 2–4 participants |
-| **Duration** | Approximately 3 hours |
 | **Starter code** | [templates/03_persona_chatbot.ipynb](../templates/03_persona_chatbot.ipynb) |
 
 ---
@@ -71,7 +70,6 @@ At the final demonstration, the team must present:
 - [ ] A one-sentence explanation of what a **system prompt** is and what **temperature** controls, ideally shown by comparing the same question at temperature 0 and 1.5
 - [ ] One example of an attempt to make the chatbot break character, and how the team addressed it
 
-**Presentation time:** 3 minutes, followed by 1 minute of questions.
 
 ## 8. Optional Extensions
 

@@ -4,7 +4,6 @@
 |---|---|
 | **Level** | Foundation (no coding required) |
 | **Team size** | 2–4 participants |
-| **Duration** | Approximately 3 hours |
 | **Problem statement** | [problem-statements/02_build_a_bot.md](../problem-statements/02_build_a_bot.md) |
 
 This worksheet guides the team through designing, testing and improving a custom AI assistant without writing code. The main technique is the **system prompt**: written instructions that define an AI model's role and behaviour. Organisations use the same technique to build customer-support assistants, tutoring tools and similar applications.
@@ -15,19 +14,7 @@ This worksheet guides the team through designing, testing and improving a custom
 
 ---
 
-## Timeline
-
-| Time | Phase | Activity |
-|---|---|---|
-| 0:00 – 0:20 | Definition | Define the assistant's purpose and target audience. |
-| 0:20 – 0:50 | Initial build | Write the first version of the system prompt and create the assistant. |
-| 0:50 – 1:20 | Testing | Run the test plan and record the results. |
-| 1:20 – 2:20 | Improvement | Revise the system prompt over further versions and carry out red-teaming. |
-| 2:20 – 3:00 | Presentation | Prepare slides and the live demonstration. |
-
----
-
-## Step 1: Define the assistant (20 minutes)
+## Step 1: Define the assistant
 
 Select a **specific purpose** for a **specific audience**. Narrowly defined assistants generally perform better than general-purpose ones.
 
@@ -41,7 +28,7 @@ Select a **specific purpose** for a **specific audience**. Narrowly defined assi
 | Python Tutor | Beginner programmers; gives hints but never complete solutions |
 | Sustainability Advisor | Students seeking to reduce environmental impact on campus |
 
-## Step 2: Write the first system prompt (30 minutes)
+## Step 2: Write the first system prompt
 
 Complete every section of the following template:
 
@@ -74,7 +61,7 @@ Assistant: [example of an ideal response]
 4. Paste the system prompt into the **Instructions (system prompt)** field.
 5. Add three or four example starter questions, then select **Create**.
 
-## Step 3: Test the assistant (30 minutes)
+## Step 3: Test the assistant
 
 Before testing, write **10 test questions** in the shared document:
 - **5 typical questions** the target audience would realistically ask
@@ -83,7 +70,7 @@ Before testing, write **10 test questions** in the shared document:
 
 For each question, record a rating (Good / Acceptable / Poor) and the reason.
 
-## Step 4: Improve the assistant (60 minutes)
+## Step 4: Improve the assistant
 
 **Revise the system prompt** to address every response rated Poor, then re-test. Record each version:
 
@@ -107,7 +94,7 @@ For each question, record a rating (Good / Acceptable / Poor) and the reason.
 
 Record **three attempts**, whether each succeeded, and the change made to the system prompt in response.
 
-## Step 5: Presentation (3 minutes)
+## Step 5: Presentation
 
 **Slides (no more than five):**
 1. Introduction: the assistant's purpose and target audience

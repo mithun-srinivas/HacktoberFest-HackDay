@@ -4,7 +4,7 @@
 
 This document summarises all seven problem statements for organisers and judges. The full participant-facing version of each problem statement is in the [problem-statements/](problem-statements/README.md) folder.
 
-Each team of 2–4 participants selects one problem statement. Each is designed to be completed in about 3 hours of build time and must end with a working demonstration.
+Each team of 2–4 participants selects one problem statement. Each must end with a working demonstration.
 
 | No. | Problem Statement | Level | Coding required | API key | Starter material |
 |---|---|---|---|---|---|
@@ -32,7 +32,7 @@ Each team of 2–4 participants selects one problem statement. Each is designed 
 
 **Expected deliverables:**
 - A completed scorecard (10 prompts × 3 models)
-- A 3-minute presentation of the overall result, notable failures and unexpected findings
+- A presentation of the overall result, notable failures and unexpected findings
 - A live comparison using a prompt suggested by the audience
 
 **Optional extensions:** consistency testing, comparing model sizes, testing in Indian languages.

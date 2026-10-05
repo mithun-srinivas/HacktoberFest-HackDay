@@ -4,7 +4,6 @@
 |---|---|
 | **Level** | Foundation (no coding required) |
 | **Team size** | 2–4 participants |
-| **Duration** | Approximately 3 hours |
 | **Resources** | [Detailed worksheet](../worksheets/02_build_a_bot.md) |
 
 ---
@@ -48,13 +47,13 @@ The team will produce:
 
 ## 6. Approach
 
-| Step | Activity | Suggested time |
-|---|---|---|
-| 1 | Define the assistant's purpose and target audience | 20 min |
-| 2 | Write the first version of the system prompt and create the assistant | 30 min |
-| 3 | Run the test plan and record the results | 30 min |
-| 4 | Revise the system prompt, re-test, and carry out red-teaming | 60 min |
-| 5 | Prepare the presentation | 30 min |
+| Step | Activity |
+|---|---|
+| 1 | Define the assistant's purpose and target audience |
+| 2 | Write the first version of the system prompt and create the assistant |
+| 3 | Run the test plan and record the results |
+| 4 | Revise the system prompt, re-test, and carry out red-teaming |
+| 5 | Prepare the presentation |
 
 A system prompt template is provided in the detailed worksheet.
 
@@ -67,7 +66,6 @@ At the final demonstration, the team must present:
 - [ ] Three red-teaming attempts and the corrections made
 - [ ] One key lesson learned about writing instructions for AI
 
-**Presentation time:** 3 minutes, followed by 1 minute of questions.
 
 ## 8. Optional Extensions
 

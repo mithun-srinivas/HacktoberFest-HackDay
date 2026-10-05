@@ -4,7 +4,6 @@
 |---|---|
 | **Level** | Intermediate (read and modify a multi-step program) |
 | **Team size** | 2–4 participants |
-| **Duration** | Approximately 3 hours |
 | **Starter code** | [templates/06_document_question_answering.ipynb](../templates/06_document_question_answering.ipynb) |
 
 ---
@@ -69,7 +68,6 @@ At the final demonstration, the team must present:
 - [ ] A test with a question whose answer is not in the document, showing that the application declines to answer
 - [ ] The results of at least one experiment (for example, the effect of chunk size on answer quality)
 
-**Presentation time:** 3 minutes, followed by 1 minute of questions.
 
 ## 8. Optional Extensions
 

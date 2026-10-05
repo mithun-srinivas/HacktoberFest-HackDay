@@ -4,7 +4,6 @@
 |---|---|
 | **Level** | Beginner–Intermediate (modify AI instructions and small amounts of program logic) |
 | **Team size** | 2–4 participants |
-| **Duration** | Approximately 3 hours |
 | **Starter code** | [templates/05_study_quiz_generator.ipynb](../templates/05_study_quiz_generator.ipynb) |
 
 ---
@@ -69,7 +68,6 @@ At the final demonstration, the team must present:
 - [ ] A one-sentence explanation of why the AI is asked to respond in JSON
 - [ ] At least one example of an inaccurate question or answer produced by the AI, and how the team addressed it
 
-**Presentation time:** 3 minutes, followed by 1 minute of questions.
 
 ## 8. Optional Extensions
 

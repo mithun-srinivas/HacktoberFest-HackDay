@@ -4,7 +4,6 @@
 |---|---|
 | **Level** | Foundation (no coding required) |
 | **Team size** | 2–4 participants |
-| **Duration** | Approximately 3 hours |
 | **Resources** | [Detailed worksheet](../worksheets/01_open_model_showdown.md) |
 
 ---
@@ -49,13 +48,13 @@ Suggested themes: explaining concepts to a young audience, logic puzzles, arithm
 
 ## 6. Approach
 
-| Step | Activity | Suggested time |
-|---|---|---|
-| 1 | Explore the tools and select a theme | 20 min |
-| 2 | Write 10 test questions and define the rubric | 30 min |
-| 3 | Run all 10 questions on all 3 models; record scores and capture screenshots | 70 min |
-| 4 | Total the scores and identify patterns, strengths and weaknesses | 30 min |
-| 5 | Prepare the presentation | 30 min |
+| Step | Activity |
+|---|---|
+| 1 | Explore the tools and select a theme |
+| 2 | Write 10 test questions and define the rubric |
+| 3 | Run all 10 questions on all 3 models; record scores and capture screenshots |
+| 4 | Total the scores and identify patterns, strengths and weaknesses |
+| 5 | Prepare the presentation |
 
 **Fair testing rules:**
 - Use the identical question for every model.
@@ -72,7 +71,6 @@ At the final demonstration, the team must present:
 - [ ] At least one unexpected finding
 - [ ] A live comparison: one question suggested by the audience, answered by two models, with the audience voting on the better response
 
-**Presentation time:** 3 minutes, followed by 1 minute of questions.
 
 ## 8. Optional Extensions
 

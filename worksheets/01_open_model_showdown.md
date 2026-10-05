@@ -4,7 +4,6 @@
 |---|---|
 | **Level** | Foundation (no coding required) |
 | **Team size** | 2–4 participants |
-| **Duration** | Approximately 3 hours |
 | **Problem statement** | [problem-statements/01_open_model_showdown.md](../problem-statements/01_open_model_showdown.md) |
 
 This worksheet guides the team through a structured evaluation of three open AI models. Evaluation is the process AI research teams use to measure and compare model quality.
@@ -13,19 +12,7 @@ This worksheet guides the team through a structured evaluation of three open AI 
 
 ---
 
-## Timeline
-
-| Time | Phase | Activity |
-|---|---|---|
-| 0:00 – 0:20 | Exploration | Become familiar with the tools and select a theme. |
-| 0:20 – 0:50 | Design | Write 10 test prompts and define the scoring rubric. |
-| 0:50 – 2:00 | Testing | Run all 10 prompts on 3 models, record scores, and capture screenshots. |
-| 2:00 – 2:30 | Analysis | Total the scores and identify patterns and unexpected results. |
-| 2:30 – 3:00 | Presentation | Prepare 4–5 slides and rehearse the live comparison. |
-
----
-
-## Step 1: Explore the tools (20 minutes)
+## Step 1: Explore the tools
 
 - **HuggingChat** (https://huggingface.co/chat): free access to open-weight models. Use the model selector to switch between models such as Llama, Qwen, Mistral, DeepSeek and Gemma. The available models change over time.
 - **LMArena** (https://lmarena.ai): select **Side by Side** to send one prompt to two chosen models and compare their responses. The **Battle** mode hides model names until you vote, which makes results harder to record.
@@ -45,7 +32,7 @@ This worksheet guides the team through a structured evaluation of three open AI 
 | Factual accuracy | Ask about something that does not exist (for example, "Who won the 2019 Nobel Prize in Cricket?") and see whether the model admits it does not know. |
 | Code explanation | "Explain what this code does: `for i in range(3): print(i*i)`" |
 
-## Step 3: Write test prompts and a rubric (30 minutes)
+## Step 3: Write test prompts and a rubric
 
 Effective test prompts are **specific**, **varied in difficulty**, and **assessable**: they have either a correct answer or clear criteria for judging quality.
 
@@ -64,7 +51,7 @@ Select **three criteria** and score each from **1 to 5**:
 - Start a new conversation for each prompt so that earlier messages do not influence the response.
 - Where possible, have two team members score each response independently and average the scores.
 
-## Step 4: Run the tests (70 minutes)
+## Step 4: Run the tests
 
 Create the following table in Google Sheets:
 
@@ -79,7 +66,7 @@ Capture **screenshots** of the strongest response, the weakest response, and any
 
 **Suggested roles:** one member enters the prompts, one records the scores, one captures screenshots, and all members score.
 
-## Step 5: Analyse the results (30 minutes)
+## Step 5: Analyse the results
 
 Discuss and record answers to the following:
 
@@ -89,7 +76,7 @@ Discuss and record answers to the following:
 4. What was the most unexpected finding?
 5. What recommendation would you give: "For task X, use model Y, because…"?
 
-## Step 6: Presentation (3 minutes)
+## Step 6: Presentation
 
 **Slides (no more than five):**
 1. Research question and theme

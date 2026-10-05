@@ -4,7 +4,6 @@
 |---|---|
 | **Level** | Beginner (modify lists and settings in working starter code) |
 | **Team size** | 2–4 participants |
-| **Duration** | Approximately 3 hours |
 | **Starter code** | [templates/04_image_classifier.ipynb](../templates/04_image_classifier.ipynb) |
 | **API key** | Not required |
 
@@ -54,7 +53,7 @@ Example themes: regional foods, recyclable and non-recyclable items, dog breeds,
 
 ## 6. Approach
 
-1. Open the notebook in Google Colab and run each cell in order (Shift + Enter). The first run downloads the model, which takes about one minute. The notebook then classifies a sample photo.
+1. Open the notebook in Google Colab and run each cell in order (Shift + Enter). The first run downloads the model. The notebook then classifies a sample photo.
 2. Select a theme and define the list of labels.
 3. Make changes at the points marked **STUDENT TODO** in the code:
    - **Level 1:** application name, description, and list of labels
@@ -75,7 +74,6 @@ At the final demonstration, the team must present:
 - [ ] A one-sentence explanation of zero-shot classification
 - [ ] At least one example of an incorrect classification and a possible explanation for it
 
-**Presentation time:** 3 minutes, followed by 1 minute of questions.
 
 ## 8. Optional Extensions
 

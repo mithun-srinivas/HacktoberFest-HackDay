@@ -2,7 +2,7 @@
 
 **Theme:** Open-Source AI and Open-Weight Models
 
-This document summarises all seven problem statements for organisers and judges. The full participant-facing version of each problem statement is in the [problem-statements/](problem-statements/README.md) folder.
+This document summarises all five problem statements for organisers and judges. The full participant-facing version of each problem statement is in the [problem-statements/](problem-statements/README.md) folder.
 
 Each team of 2–4 participants selects one problem statement. Each must end with a working demonstration.
 
@@ -12,11 +12,9 @@ Each team of 2–4 participants selects one problem statement. Each must end wit
 | 2 | Build-a-Bot | Foundation | None | None (free GroqCloud account) | [Worksheet](worksheets/02_build_a_bot.md) |
 | 3 | Persona Chatbot | Beginner | Edit text and settings | Groq (free) | [Notebook](templates/03_persona_chatbot.ipynb) |
 | 4 | Image Classifier | Beginner | Edit lists and settings | None | [Notebook](templates/04_image_classifier.ipynb) |
-| 5 | Study Quiz Generator | Beginner–Intermediate | Edit prompts and small logic | Groq (free) | [Notebook](templates/05_study_quiz_generator.ipynb) |
-| 6 | Document Question Answering | Intermediate | Read and modify a pipeline | Groq (free) | [Notebook](templates/06_document_question_answering.ipynb) |
-| 7 | First-Issue Finder | Advanced | Web APIs and prompts | Groq (free); GitHub token optional | [Notebook](templates/07_first_issue_finder.ipynb) |
+| 5 | Document Question Answering | Intermediate | Read and modify a pipeline | Groq (free) | [Notebook](templates/05_document_question_answering.ipynb) |
 
-**Participant requirements:** a laptop with a web browser and a Google account (for Google Colab). Problems 3, 5, 6 and 7 also require a free API key from console.groq.com, a service that hosts open-weight models such as OpenAI's gpt-oss.
+**Participant requirements:** a laptop with a web browser and a Google account (for Google Colab). Problems 3 and 5 also require a free API key from console.groq.com, a service that hosts open-weight models such as OpenAI's gpt-oss.
 
 **Guidance for judges:** a smaller project that works and is clearly explained should be valued above a more ambitious project that does not work. Teams are expected to explain how the AI component works and where it fails.
 
@@ -92,24 +90,7 @@ Each team of 2–4 participants selects one problem statement. Each must end wit
 
 ---
 
-## 5. Study Quiz Generator
-
-**Summary:** A web application that converts class notes into an interactive multiple-choice quiz with scoring and explanations.
-
-**Work to be done:** The team refines the question-generation prompt, which produces structured JSON output, adds difficulty control, and improves the quiz experience.
-
-**Tools:** Google Colab, Python, Gradio, Groq API, JSON.
-
-**Expected deliverables:**
-- A live demonstration using real course notes
-- Clearly differentiated difficulty levels
-- An explanation of why structured (JSON) output is used
-
-**Optional extensions:** additional question types, hints, AI-based answer verification, flashcard export.
-
----
-
-## 6. Document Question Answering
+## 5. Document Question Answering
 
 **Summary:** A Retrieval-Augmented Generation (RAG) application that answers questions from an uploaded PDF, using only the document's content, with page citations.
 
@@ -124,19 +105,3 @@ Each team of 2–4 participants selects one problem statement. Each must end wit
 
 **Optional extensions:** chunk-size experiments, multiple documents, conversation memory, a with-RAG versus without-RAG comparison.
 
----
-
-## 7. First-Issue Finder
-
-**Summary:** A tool that finds beginner-friendly issues in any GitHub repository and explains them in plain language.
-
-**Work to be done:** The tool requests open issues from the GitHub REST API, preferring those labelled for beginners, and uses an open-weight model to produce a summary, difficulty rating, required skills and a first step for each.
-
-**Tools:** Google Colab, Python, Gradio, `requests`, GitHub REST API, Groq API.
-
-**Expected deliverables:**
-- A live demonstration using a repository named by the audience
-- Structured issue cards with summary, difficulty, skills and first step
-- One issue selected by the team, with an outline of how they would approach it
-
-**Optional extensions:** skill filtering, suitability ranking, draft assignment comments, repository summaries.

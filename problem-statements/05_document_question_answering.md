@@ -1,10 +1,10 @@
-# Problem Statement 6: Document Question Answering
+# Problem Statement 5: Document Question Answering
 
 | | |
 |---|---|
 | **Level** | Intermediate (read and modify a multi-step program) |
 | **Team size** | 2–4 participants |
-| **Starter code** | [templates/06_document_question_answering.ipynb](../templates/06_document_question_answering.ipynb) |
+| **Starter code** | [templates/05_document_question_answering.ipynb](../templates/05_document_question_answering.ipynb) |
 
 ---
 

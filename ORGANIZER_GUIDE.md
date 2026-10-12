@@ -49,8 +49,7 @@ This guide covers the event schedule, preparation checklist, distribution of sta
 | No coding experience; prefers not to code | Problem 1 (Open Model Showdown) or Problem 2 (Build-a-Bot) |
 | No coding experience; willing to try | Problem 3 (Persona Chatbot). Level 1 changes involve editing text only. |
 | Interested in visual or interactive work | Problem 4 (Image Classifier). No API key is required. |
-| Some Python experience | Problem 5 (Study Quiz Generator) |
-| Has completed a programming course | Problem 6 (Document Question Answering) or Problem 7 (First-Issue Finder) |
+| Some Python experience, or has completed a programming course | Problem 5 (Document Question Answering) |
 
 Teams may switch to a simpler problem statement at the lunch break. A complete, working project is preferable to an incomplete, ambitious one.
 
@@ -72,14 +71,12 @@ Teams may switch to a simpler problem statement at the lunch break. A complete, 
 | `NameError: name 'X' is not defined` | Cells were skipped, run out of order, or the session restarted | Select **Runtime → Run all**, or run the cells in order. |
 | Notebook remains in demonstration mode after a key is added | Incorrect secret name, or notebook access not enabled | The secret must be named exactly `GROQ_API_KEY`, with notebook access enabled. Re-run the setup cell. |
 | "API key was rejected" | Incomplete copy, or key deleted | Create a new key at console.groq.com under API Keys. |
-| "Usage limit reached" | Groq free-tier limits per minute or per day (per key) | Wait about one minute. Use `openai/gpt-oss-20b` rather than the larger `openai/gpt-oss-120b`. Reduce `MEMORY` (Problem 3) or `MAX_ISSUES` (Problem 7). Team members may each create a key. |
+| "Usage limit reached" | Groq free-tier limits per minute or per day (per key) | Wait about one minute. Use `openai/gpt-oss-20b` rather than the larger `openai/gpt-oss-120b`. Reduce `MEMORY` (Problem 3) or `TOP_K` (Problem 5). Team members may each create a key. |
 | "Groq does not recognise the model" | The model has been retired by Groq, or the name is misspelled | Set `MODEL = "openai/gpt-oss-20b"` (or another model listed at console.groq.com/docs/models) and re-run the settings and launch cells. |
 | Application does not reflect changes | The edited cell or the launch cell was not re-run | Re-run the edited cell and then the launch cell. |
 | `SyntaxError` or `IndentationError` | Missing quotation mark, comma or bracket, or inconsistent indentation | Check the line shown in the error message and the line above it. |
-| Problem 5: "response was not valid JSON" | The model occasionally produces incorrectly formatted output | Retry. If it happens repeatedly, lower `TEMPERATURE` and confirm the JSON section of the prompt is unchanged. |
 | Problem 4: slow first run | The CLIP model (about 600 MB) is downloading | Expected; takes about one minute. A GPU runtime (Runtime → Change runtime type → T4 GPU) is optional. |
-| Problem 6: "No text found" | The PDF contains scanned images only | Use a text-based PDF or the sample document provided. |
-| Problem 7: GitHub rate limit | The unauthenticated limit (about 60 requests per hour) is shared by all users on the same network | Add a free fine-grained `GITHUB_TOKEN` secret, as described in the notebook. |
+| Problem 5: "No text found" | The PDF contains scanned images only | Use a text-based PDF or the sample document provided. |
 | Public link does not open | The venue network blocks gradio.live | Use the application shown within the notebook for the demonstration. |
 | Colab session disconnected | Idle timeout or lost connection | Reconnect and select **Runtime → Run all**. Changes saved in the notebook are kept. |
 
@@ -108,7 +105,7 @@ Teams may switch to a simpler problem statement at the lunch break. A complete, 
 - Best Persona Design
 - Best Experiment or Evaluation
 - Best Robustness Testing
-- Open-Source Contribution Award (for example, a Problem 7 team that identified a real issue to work on)
+- Open-Source Spirit Award (for example, a team that publishes its project on GitHub with clear documentation)
 
 ---
 

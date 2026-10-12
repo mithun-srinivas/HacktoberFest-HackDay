@@ -1,40 +1,26 @@
-# Hacktoberfest Hack Day: Open-Source AI Starter Kit
+# Hacktoberfest Hack Day: Open-Source AI
 
-This kit supports a one-day hack day for first-year college students on the theme of **open-source AI and open-weight models**. All coding projects run in **Google Colab** (browser only, no installation), and all tools and models are **free to use**. No paid API keys are required.
+Welcome to the Hacktoberfest Hack Day. The theme is **open-source AI and open-weight models**. All tools and models used are free, and the coding projects run in **Google Colab**, so nothing needs to be installed.
 
-## Contents
+## Choose a problem statement
 
-| Item | Audience | Description |
-|---|---|---|
-| [problem-statements/](problem-statements/README.md) | Participants | One document per problem statement: background, objective, scope, key terms, requirements, approach and expected deliverables |
-| [PROBLEM_STATEMENTS.md](PROBLEM_STATEMENTS.md) | Organisers and judges | All five problem statements summarised in a single document |
-| [ORGANIZER_GUIDE.md](ORGANIZER_GUIDE.md) | Organisers and mentors | Event schedule, preparation checklist, mentor reference and judging criteria |
-| [worksheets/01_open_model_showdown.md](worksheets/01_open_model_showdown.md) | Participants (Problem 1) | Step-by-step worksheet for the no-code model evaluation project |
-| [worksheets/02_build_a_bot.md](worksheets/02_build_a_bot.md) | Participants (Problem 2) | Step-by-step worksheet for the no-code assistant design project |
-| [templates/03_persona_chatbot.ipynb](templates/03_persona_chatbot.ipynb) | Participants (Problem 3) | Starter notebook: chatbot with a configurable persona |
-| [templates/04_image_classifier.ipynb](templates/04_image_classifier.ipynb) | Participants (Problem 4) | Starter notebook: zero-shot image classifier (no API key required) |
-| [templates/05_document_question_answering.ipynb](templates/05_document_question_answering.ipynb) | Participants (Problem 5) | Starter notebook: document question answering (RAG) with page citations |
+See **[PROBLEM_STATEMENTS.md](PROBLEM_STATEMENTS.md)** for the full list. Each team of 2–4 participants selects one.
 
-## Open a starter notebook in Google Colab
+| No. | Problem Statement | Level | Starter material |
+|---|---|---|---|
+| 1 | [Open Model Showdown](problem-statements/01_open_model_showdown.md) | Foundation (no coding) | [Worksheet](worksheets/01_open_model_showdown.md) |
+| 2 | [Build-a-Bot](problem-statements/02_build_a_bot.md) | Foundation (no coding) | [Worksheet](worksheets/02_build_a_bot.md) |
+| 3 | [Persona Chatbot](problem-statements/03_persona_chatbot.md) | Beginner | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/03_persona_chatbot.ipynb) |
+| 4 | [Image Classifier](problem-statements/04_image_classifier.md) | Beginner | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/04_image_classifier.ipynb) |
+| 5 | [Document Question Answering](problem-statements/05_document_question_answering.md) | Intermediate | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/05_document_question_answering.ipynb) |
 
-| Problem | Link |
-|---|---|
-| 3. Persona Chatbot | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/03_persona_chatbot.ipynb) |
-| 4. Image Classifier | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/04_image_classifier.ipynb) |
-| 5. Document Question Answering | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/05_document_question_answering.ipynb) |
+## Getting started
 
-## Getting started (participants)
+**Problems 1 and 2 (no coding):** open the worksheet for your problem and follow the steps.
 
-1. Open the notebook for your problem statement in Google Colab using the links above.
+**Problems 3, 4 and 5 (Google Colab):**
+1. Select **Open in Colab** for your problem in the table above, and sign in with a Google account.
 2. Select **File → Save a copy in Drive** so that your changes are saved.
-3. For Problems 3 and 5, create a free API key at **console.groq.com** and add it in the Colab **Secrets** panel under the name `GROQ_API_KEY`. Until a key is added, the notebook runs in demonstration mode.
+3. For Problems 3 and 5, create a free API key at **console.groq.com** and add it in the Colab **Secrets** panel under the name `GROQ_API_KEY`. The notebook explains each step. Until a key is added, the notebook runs in demonstration mode.
 4. Run the cells in order from top to bottom (**Shift + Enter**). The application appears at the end of the notebook, together with a public link.
 5. Make your changes at the points marked **STUDENT TODO**.
-
-## Models used
-
-| Model | Developer | Used in | Hosted on |
-|---|---|---|---|
-| gpt-oss 20B (default) / gpt-oss 120B | OpenAI | Problems 2, 3, 5 | Groq (free tier) |
-| CLIP ViT-B/32 | OpenAI | Problem 4 | Google Colab |
-| all-MiniLM-L6-v2 | sentence-transformers | Problem 5 | Google Colab |

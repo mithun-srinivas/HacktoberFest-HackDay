@@ -1,107 +1,100 @@
-# Hacktoberfest Hack Day: Problem Statements (Summary)
+# Hacktoberfest Hack Day: Problem Statements
 
 **Theme:** Open-Source AI and Open-Weight Models
 
-This document summarises all five problem statements for organisers and judges. The full participant-facing version of each problem statement is in the [problem-statements/](problem-statements/README.md) folder.
+Each team of 2–4 participants selects **one** of the problem statements below. Every project must end with a working demonstration.
 
-Each team of 2–4 participants selects one problem statement. Each must end with a working demonstration.
+Participants with no prior coding experience are encouraged to choose Problem 1, 2 or 3.
 
-| No. | Problem Statement | Level | Coding required | API key | Starter material |
-|---|---|---|---|---|---|
-| 1 | Open Model Showdown | Foundation | None | None | [Worksheet](worksheets/01_open_model_showdown.md) |
-| 2 | Build-a-Bot | Foundation | None | None (free GroqCloud account) | [Worksheet](worksheets/02_build_a_bot.md) |
-| 3 | Persona Chatbot | Beginner | Edit text and settings | Groq (free) | [Notebook](templates/03_persona_chatbot.ipynb) |
-| 4 | Image Classifier | Beginner | Edit lists and settings | None | [Notebook](templates/04_image_classifier.ipynb) |
-| 5 | Document Question Answering | Intermediate | Read and modify a pipeline | Groq (free) | [Notebook](templates/05_document_question_answering.ipynb) |
+| No. | Problem Statement | Level | Coding required | Account or key needed | Full details | Starter material |
+|---|---|---|---|---|---|---|
+| 1 | Open Model Showdown | Foundation | None | None | [Problem statement](problem-statements/01_open_model_showdown.md) | [Worksheet](worksheets/01_open_model_showdown.md) |
+| 2 | Build-a-Bot | Foundation | None | Free GroqCloud account | [Problem statement](problem-statements/02_build_a_bot.md) | [Worksheet](worksheets/02_build_a_bot.md) |
+| 3 | Persona Chatbot | Beginner | Edit text and settings | Free Groq API key | [Problem statement](problem-statements/03_persona_chatbot.md) | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/03_persona_chatbot.ipynb) |
+| 4 | Image Classifier | Beginner | Edit lists and settings | None | [Problem statement](problem-statements/04_image_classifier.md) | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/04_image_classifier.ipynb) |
+| 5 | Document Question Answering | Intermediate | Read and modify a short program | Free Groq API key | [Problem statement](problem-statements/05_document_question_answering.md) | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/05_document_question_answering.ipynb) |
 
-**Participant requirements:** a laptop with a web browser and a Google account (for Google Colab). Problems 3 and 5 also require a free API key from console.groq.com, a service that hosts open-weight models such as OpenAI's gpt-oss.
+### Levels
 
-**Guidance for judges:** a smaller project that works and is clearly explained should be valued above a more ambitious project that does not work. Teams are expected to explain how the AI component works and where it fails.
+| Level | What it involves |
+|---|---|
+| Foundation | No coding. Work is done using free web tools. |
+| Beginner | Modify text and settings in starter code that already works. |
+| Intermediate | Read and modify a multi-step program. |
+
+**All teams need:** a laptop with a web browser and a Google account. A free Groq account or API key can be created at console.groq.com; instructions are included in the worksheet or notebook.
 
 ---
 
 ## 1. Open Model Showdown
 
-**Summary:** A structured, fair comparison of three open AI models on a theme chosen by the team.
+**Level:** Foundation (no coding)
 
-**Work to be done:** The team defines 10 test prompts and a three-criterion scoring rubric, runs every prompt on three open-weight models, records the scores, and presents its conclusions.
+**What you will do:** Compare three free, open AI models in a fair test. Write 10 questions on a theme of your choice, score every answer using a simple rubric, and present which model performed best and why.
 
 **Tools:** HuggingChat (huggingface.co/chat), LMArena (lmarena.ai), Google Sheets, Google Slides.
 
-**Expected deliverables:**
-- A completed scorecard (10 prompts × 3 models)
-- A presentation of the overall result, notable failures and unexpected findings
-- A live comparison using a prompt suggested by the audience
-
-**Optional extensions:** consistency testing, comparing model sizes, testing in Indian languages.
+**What you will present:**
+- Your completed scorecard (10 questions × 3 models)
+- The overall result, notable errors, and one unexpected finding
+- A live comparison using a question suggested by the audience
 
 ---
 
 ## 2. Build-a-Bot
 
-**Summary:** Design, test and improve a custom AI assistant using a system prompt in the Groq Playground, without writing code.
+**Level:** Foundation (no coding)
 
-**Work to be done:** The team builds an assistant in the Groq Playground for one defined purpose and audience, tests it against a written test plan, revises the system prompt over at least three versions, and carries out red-teaming (deliberate attempts to make it misbehave).
+**What you will do:** Design your own AI assistant for one specific purpose and audience by writing its instructions (the system prompt) in the Groq Playground. Test it, improve it over at least three versions, and try to make it fail so that you can fix its weaknesses.
 
-**Tools:** Groq Playground (console.groq.com/playground) only, and a shared document for recording each system prompt version.
+**Tools:** Groq Playground (console.groq.com/playground) and a shared document for recording each version.
 
-**Expected deliverables:**
-- A working assistant, demonstrated live in the Groq Playground
-- A comparison of first-version and final-version responses
-- Three red-teaming attempts and the corrections made
-
-**Optional extensions:** few-shot examples, comparing models, temperature comparison, restricted-word testing.
-
-> **Note for organisers:** the Groq Playground does not create shareable links or permanently save prompts. Teams demonstrate from their own laptop and keep their prompt versions in a shared document.
+**What you will present:**
+- Your assistant, demonstrated live in the Groq Playground
+- Responses from the first and final versions to the same question
+- Three attempts to make the assistant fail, and how you corrected them
 
 ---
 
 ## 3. Persona Chatbot
 
-**Summary:** Adapt a working chatbot web application into an assistant with an original, defined persona.
+**Level:** Beginner
 
-**Work to be done:** Starting from the provided example, the team defines a new persona, adds example questions, adjusts settings such as temperature, and optionally adds features.
+**What you will do:** Start from a chatbot web application that already works and turn it into a chatbot with your own character and purpose. Change its instructions, example questions and settings, then share it through a public link.
 
-**Tools:** Google Colab, Python, Gradio, Groq API (`openai/gpt-oss-20b`).
+**Tools:** Google Colab, Python, Gradio, Groq API (open-weight model `openai/gpt-oss-20b`).
 
-**Expected deliverables:**
-- A chatbot available through a public link
-- A persona that stays consistent across at least five exchanges
-- An explanation of system prompts and temperature, with a demonstration
-
-**Optional extensions:** persona selection menu, larger model comparison, AI-based response review.
+**What you will present:**
+- Your chatbot, available through a public link that the audience can open
+- A persona that stays consistent for at least five exchanges
+- A short explanation of what a system prompt and temperature are, with a demonstration
 
 ---
 
 ## 4. Image Classifier
 
-**Summary:** A web application that classifies photos into categories defined by the team, using an open-weight vision model without additional training.
+**Level:** Beginner
 
-**Work to be done:** The team selects a theme and labels, refines label wording to improve accuracy, and measures accuracy on a set of test images.
+**What you will do:** Build a web application that identifies what is in a photo, choosing from a list of categories that you define. The open-weight model runs inside Google Colab, so no API key is needed. Improve the category wording and measure how accurate the application is.
 
-**Tools:** Google Colab, Python, Gradio, Hugging Face `transformers`, model `openai/clip-vit-base-patch32`. No API key is required.
+**Tools:** Google Colab, Python, Gradio, Hugging Face `transformers`, open-weight model CLIP.
 
-**Expected deliverables:**
-- A live demonstration using webcam or phone images
-- Accuracy results on 10 test images, before and after refinement
-- An explanation of zero-shot classification
-
-**Optional extensions:** prompt templates, confidence thresholds, alternative models (SigLIP, CLIP Large), practical use cases.
+**What you will present:**
+- A live demonstration using a webcam or phone photo
+- Accuracy results on 10 test photos, before and after your improvements
+- A short explanation of zero-shot classification
 
 ---
 
 ## 5. Document Question Answering
 
-**Summary:** A Retrieval-Augmented Generation (RAG) application that answers questions from an uploaded PDF, using only the document's content, with page citations.
+**Level:** Intermediate
 
-**Work to be done:** The team works with a pipeline that splits the document into chunks, creates embeddings with an open-weight model, retrieves relevant passages, and generates a cited answer. Teams experiment with the pipeline parameters.
+**What you will do:** Build a web application that answers questions about an uploaded PDF (such as a course syllabus) using only the content of that document, and shows the page number for each answer. This technique is called Retrieval-Augmented Generation (RAG).
 
-**Tools:** Google Colab, Python, Gradio, `pypdf`, `sentence-transformers` (`all-MiniLM-L6-v2`), Groq API.
+**Tools:** Google Colab, Python, Gradio, `pypdf`, `sentence-transformers`, Groq API.
 
-**Expected deliverables:**
-- A live demonstration with a real PDF and correct page citations
-- Display of the retrieved passages
-- A demonstration that the application declines to answer questions not covered by the document
-
-**Optional extensions:** chunk-size experiments, multiple documents, conversation memory, a with-RAG versus without-RAG comparison.
-
+**What you will present:**
+- A live demonstration with a real PDF and correct page references
+- The passages the application retrieved, used to explain how RAG works
+- A question that is not covered by the document, which the application declines to answer

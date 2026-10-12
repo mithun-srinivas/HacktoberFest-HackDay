@@ -36,7 +36,7 @@ The completed application must:
 | Prompt | The instructions given to the AI. Here, the prompt defines how the questions should be written. |
 | JSON | A structured text format that programs can read easily, for example `{"question": "...", "options": [...]}`. |
 | Multiple-choice question | A question with several options, exactly one of which is correct. |
-| Llama | An open AI model released by Meta, used here to generate the questions. |
+| gpt-oss | An open-weight AI model released by OpenAI, used here to generate the questions. |
 | API key | A private access code that allows the program to use the AI service. It must not be shared. |
 
 ## 5. Requirements

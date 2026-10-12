@@ -4,6 +4,7 @@
 |---|---|
 | **Level** | Foundation (no coding required) |
 | **Team size** | 2–4 participants |
+| **Platform** | Groq Playground (console.groq.com/playground) |
 | **Resources** | [Detailed worksheet](../worksheets/02_build_a_bot.md) |
 
 ---
@@ -16,7 +17,7 @@ An AI's behaviour can be shaped by giving it written instructions before the con
 
 ## 2. Objective
 
-Design, test and improve a **custom AI assistant** for one clearly defined purpose and audience, without writing any code.
+Design, test and improve a **custom AI assistant** for one clearly defined purpose and audience, without writing any code, using the **Groq Playground**.
 
 ## 3. Scope of Work
 
@@ -35,22 +36,23 @@ The team will produce:
 | System prompt | Instructions given to the AI before every conversation, defining its role and rules. |
 | Persona | The defined character, tone and style of the assistant. |
 | Red-teaming | Deliberately trying to make a system fail, in order to find and fix weaknesses. |
-| Open model | A publicly available AI model, such as Llama or Qwen, on which the assistant runs. |
+| Open model | A publicly available AI model, such as Llama or gpt-oss, on which the assistant runs. |
+| Groq Playground | A free web interface for testing open-weight models, with a field for the system prompt and settings such as temperature. |
+| Temperature | A setting that controls how varied the AI's responses are. |
 
 ## 5. Requirements
 
 - A laptop with a web browser
-- A free Hugging Face account (huggingface.co/join)
-- **HuggingChat Assistants** (huggingface.co/chat/assistants)
-  - If this service is unavailable, the organisers will direct teams to the **Groq Playground** (console.groq.com/playground) as an alternative.
-- A shared document for recording versions and test results
+- A free GroqCloud account (sign in at console.groq.com with a Google or GitHub account)
+- The **Groq Playground** (console.groq.com/playground). This is the only platform to be used for this problem statement.
+- A shared document for recording every system prompt version and the test results. The Playground does not permanently save prompts, so the shared document is the team's record of its work.
 
 ## 6. Approach
 
 | Step | Activity |
 |---|---|
 | 1 | Define the assistant's purpose and target audience |
-| 2 | Write the first version of the system prompt and create the assistant |
+| 2 | Write the first version of the system prompt and load it into the Groq Playground |
 | 3 | Run the test plan and record the results |
 | 4 | Revise the system prompt, re-test, and carry out red-teaming |
 | 5 | Prepare the presentation |
@@ -61,7 +63,7 @@ A system prompt template is provided in the detailed worksheet.
 
 At the final demonstration, the team must present:
 
-- [ ] A working assistant that the judges can access (via a link or QR code)
+- [ ] A working assistant, demonstrated live in the Groq Playground, with a judge or audience member entering at least one question
 - [ ] A comparison of responses from the first and final versions to the same question
 - [ ] Three red-teaming attempts and the corrections made
 - [ ] One key lesson learned about writing instructions for AI
@@ -70,5 +72,6 @@ At the final demonstration, the team must present:
 ## 8. Optional Extensions
 
 - Include an example conversation in the system prompt and assess its effect on response style.
-- Apply the same system prompt to a different model and compare how well each follows the rules.
+- Apply the same system prompt to a different model in the Playground and compare how well each follows the rules.
+- Compare responses to the same question at low and high temperature.
 - Define a restricted word the assistant must never use, and invite the audience to test it.

@@ -31,8 +31,8 @@ This guide covers the event schedule, preparation checklist, distribution of sta
 
 ### One week before the event
 - [ ] **Test every notebook in Google Colab with a valid Groq API key.** Run all cells in order, launch each application, and open the public link on a mobile device.
-- [ ] Confirm at https://console.groq.com/docs/models that `llama-3.1-8b-instant` is still available. If it has been retired, update the `MODEL` setting in each notebook (one line per notebook).
-- [ ] Confirm that HuggingChat Assistants (huggingface.co/chat/assistants) is available for Problem 2. If it is not, the worksheet describes the Groq Playground alternative.
+- [ ] Confirm at https://console.groq.com/docs/models and https://console.groq.com/docs/deprecations that `openai/gpt-oss-20b` is still available to free-tier accounts. Groq retires models periodically (the Llama 3.1 and 3.3 models were retired for free-tier accounts on 16 August 2026). If it has been retired, update the `MODEL` setting in each notebook (one line per notebook).
+- [ ] Confirm that the Groq Playground (console.groq.com/playground) is available for Problem 2, and note the models currently offered there.
 - [ ] Test the venue network with Google Colab and a `*.gradio.live` public link. If the network blocks these links, teams can demonstrate from the application shown within the notebook, and a mobile hotspot should be available for the demonstration laptop.
 
 ### On the day
@@ -72,7 +72,8 @@ Teams may switch to a simpler problem statement at the lunch break. A complete, 
 | `NameError: name 'X' is not defined` | Cells were skipped, run out of order, or the session restarted | Select **Runtime → Run all**, or run the cells in order. |
 | Notebook remains in demonstration mode after a key is added | Incorrect secret name, or notebook access not enabled | The secret must be named exactly `GROQ_API_KEY`, with notebook access enabled. Re-run the setup cell. |
 | "API key was rejected" | Incomplete copy, or key deleted | Create a new key at console.groq.com under API Keys. |
-| "Usage limit reached" | Groq free-tier limits per minute or per day (per key) | Wait about one minute. Use `llama-3.1-8b-instant`, which has the highest limits. Reduce `MEMORY` (Problem 3) or `MAX_ISSUES` (Problem 7). Team members may each create a key. |
+| "Usage limit reached" | Groq free-tier limits per minute or per day (per key) | Wait about one minute. Use `openai/gpt-oss-20b` rather than the larger `openai/gpt-oss-120b`. Reduce `MEMORY` (Problem 3) or `MAX_ISSUES` (Problem 7). Team members may each create a key. |
+| "Groq does not recognise the model" | The model has been retired by Groq, or the name is misspelled | Set `MODEL = "openai/gpt-oss-20b"` (or another model listed at console.groq.com/docs/models) and re-run the settings and launch cells. |
 | Application does not reflect changes | The edited cell or the launch cell was not re-run | Re-run the edited cell and then the launch cell. |
 | `SyntaxError` or `IndentationError` | Missing quotation mark, comma or bracket, or inconsistent indentation | Check the line shown in the error message and the line above it. |
 | Problem 5: "response was not valid JSON" | The model occasionally produces incorrectly formatted output | Retry. If it happens repeatedly, lower `TEMPERATURE` and confirm the JSON section of the prompt is unchanged. |

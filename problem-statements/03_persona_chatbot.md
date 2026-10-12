@@ -12,7 +12,7 @@
 
 Most AI chatbots have the same neutral, general-purpose style. However, a chatbot's personality, tone and focus can be fully customised through written instructions, without changing the underlying AI model.
 
-This project uses **Llama**, an open AI model released by Meta, accessed through a free service called Groq.
+This project uses **gpt-oss**, an open-weight AI model released by OpenAI, accessed through a free service called Groq.
 
 ## 2. Objective
 
@@ -38,7 +38,7 @@ Example concepts: a campus orientation guide, a history tutor with a distinctive
 | Persona | The defined character, tone and style of the chatbot. |
 | System prompt | Instructions given to the AI before every conversation. The persona is defined here. |
 | Temperature | A setting that controls how varied the AI's responses are. Low values (around 0) give consistent responses; high values (around 1.5) give more varied and less predictable responses. |
-| Llama | An open AI model released by Meta. |
+| gpt-oss | An open-weight AI model released by OpenAI. |
 | API key | A private access code that allows the program to use the AI service. It must not be shared. |
 | Google Colab | A free, browser-based environment for running Python code. No installation is required. |
 
@@ -74,6 +74,6 @@ At the final demonstration, the team must present:
 ## 8. Optional Extensions
 
 - Add a selection menu that lets users choose between several personas.
-- Switch to a larger model (`llama-3.3-70b-versatile`) and compare the quality of responses.
+- Switch to a larger model (`openai/gpt-oss-120b`) and compare the quality of responses.
 - Require the chatbot to end each response with a follow-up question.
 - Add a second AI step that reviews and rates each response for accuracy.

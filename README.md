@@ -39,7 +39,6 @@ This kit supports a one-day hack day for first-year college students on the them
 
 | Model | Developer | Used in | Hosted on |
 |---|---|---|---|
-| Llama 3.1 8B / Llama 3.3 70B | Meta | Problems 3, 5, 6, 7 | Groq (free tier) |
-| gpt-oss 20B (optional alternative) | OpenAI | Any LLM-based problem | Groq (free tier) |
+| gpt-oss 20B (default) / gpt-oss 120B | OpenAI | Problems 2, 3, 5, 6, 7 | Groq (free tier) |
 | CLIP ViT-B/32 | OpenAI | Problem 4 | Google Colab |
 | all-MiniLM-L6-v2 | sentence-transformers | Problem 6 | Google Colab |

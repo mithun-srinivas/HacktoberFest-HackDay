@@ -9,14 +9,14 @@ Each team of 2–4 participants selects one problem statement. Each must end wit
 | No. | Problem Statement | Level | Coding required | API key | Starter material |
 |---|---|---|---|---|---|
 | 1 | Open Model Showdown | Foundation | None | None | [Worksheet](worksheets/01_open_model_showdown.md) |
-| 2 | Build-a-Bot | Foundation | None | None (free Hugging Face account) | [Worksheet](worksheets/02_build_a_bot.md) |
+| 2 | Build-a-Bot | Foundation | None | None (free GroqCloud account) | [Worksheet](worksheets/02_build_a_bot.md) |
 | 3 | Persona Chatbot | Beginner | Edit text and settings | Groq (free) | [Notebook](templates/03_persona_chatbot.ipynb) |
 | 4 | Image Classifier | Beginner | Edit lists and settings | None | [Notebook](templates/04_image_classifier.ipynb) |
 | 5 | Study Quiz Generator | Beginner–Intermediate | Edit prompts and small logic | Groq (free) | [Notebook](templates/05_study_quiz_generator.ipynb) |
 | 6 | Document Question Answering | Intermediate | Read and modify a pipeline | Groq (free) | [Notebook](templates/06_document_question_answering.ipynb) |
 | 7 | First-Issue Finder | Advanced | Web APIs and prompts | Groq (free); GitHub token optional | [Notebook](templates/07_first_issue_finder.ipynb) |
 
-**Participant requirements:** a laptop with a web browser and a Google account (for Google Colab). Problems 3, 5, 6 and 7 also require a free API key from console.groq.com, a service that hosts open-weight models such as Meta's Llama and OpenAI's gpt-oss.
+**Participant requirements:** a laptop with a web browser and a Google account (for Google Colab). Problems 3, 5, 6 and 7 also require a free API key from console.groq.com, a service that hosts open-weight models such as OpenAI's gpt-oss.
 
 **Guidance for judges:** a smaller project that works and is clearly explained should be valued above a more ambitious project that does not work. Teams are expected to explain how the AI component works and where it fails.
 
@@ -41,20 +41,20 @@ Each team of 2–4 participants selects one problem statement. Each must end wit
 
 ## 2. Build-a-Bot
 
-**Summary:** Design, test and improve a custom AI assistant using a system prompt, without writing code.
+**Summary:** Design, test and improve a custom AI assistant using a system prompt in the Groq Playground, without writing code.
 
-**Work to be done:** The team creates an assistant on HuggingChat for one defined purpose and audience, tests it against a written test plan, revises the system prompt over at least three versions, and carries out red-teaming (deliberate attempts to make it misbehave).
+**Work to be done:** The team builds an assistant in the Groq Playground for one defined purpose and audience, tests it against a written test plan, revises the system prompt over at least three versions, and carries out red-teaming (deliberate attempts to make it misbehave).
 
-**Tools:** HuggingChat Assistants (huggingface.co/chat/assistants), a shared document.
+**Tools:** Groq Playground (console.groq.com/playground) only, and a shared document for recording each system prompt version.
 
 **Expected deliverables:**
-- A working assistant the judges can use
+- A working assistant, demonstrated live in the Groq Playground
 - A comparison of first-version and final-version responses
 - Three red-teaming attempts and the corrections made
 
-**Optional extensions:** few-shot examples, comparing base models, restricted-word testing.
+**Optional extensions:** few-shot examples, comparing models, temperature comparison, restricted-word testing.
 
-> **Note for organisers:** confirm that HuggingChat Assistants is available in the week before the event. If it is not, direct teams to the Groq Playground (console.groq.com/playground), which also supports system prompts.
+> **Note for organisers:** the Groq Playground does not create shareable links or permanently save prompts. Teams demonstrate from their own laptop and keep their prompt versions in a shared document.
 
 ---
 
@@ -64,7 +64,7 @@ Each team of 2–4 participants selects one problem statement. Each must end wit
 
 **Work to be done:** Starting from the provided example, the team defines a new persona, adds example questions, adjusts settings such as temperature, and optionally adds features.
 
-**Tools:** Google Colab, Python, Gradio, Groq API (`llama-3.1-8b-instant`).
+**Tools:** Google Colab, Python, Gradio, Groq API (`openai/gpt-oss-20b`).
 
 **Expected deliverables:**
 - A chatbot available through a public link

@@ -4,15 +4,28 @@
 |---|---|
 | **Level** | Foundation (no coding required) |
 | **Team size** | 2–4 participants |
+| **Platform** | Groq Playground (https://console.groq.com/playground) |
 | **Problem statement** | [problem-statements/02_build_a_bot.md](../problem-statements/02_build_a_bot.md) |
 
 This worksheet guides the team through designing, testing and improving a custom AI assistant without writing code. The main technique is the **system prompt**: written instructions that define an AI model's role and behaviour. Organisations use the same technique to build customer-support assistants, tutoring tools and similar applications.
 
-**Requirements:** a laptop with a web browser, a free Hugging Face account (https://huggingface.co/join), and a shared Google Doc.
+All work for this problem statement is done in the **Groq Playground**, a free web interface for testing open-weight models such as OpenAI's gpt-oss.
 
-> **Alternative platform:** if the organisers confirm that HuggingChat Assistants is unavailable, use the **Groq Playground** (https://console.groq.com/playground; free account required). Enter the system prompt in the "System" field and test the assistant in the conversation panel. All steps in this worksheet still apply. The Groq Playground does not provide a shareable link, so the demonstration must be given from a team laptop.
+**Requirements:** a laptop with a web browser, a free GroqCloud account (sign in at https://console.groq.com with a Google or GitHub account), and a shared Google Doc.
 
 ---
+
+## Step 0: Set up the Groq Playground
+
+1. Go to https://console.groq.com and sign in with a Google or GitHub account.
+2. Open the **Playground** (https://console.groq.com/playground).
+3. Become familiar with the three parts of the interface:
+   - **System** field: where the system prompt (the assistant's instructions) is entered.
+   - **Conversation** panel: where messages are sent to the assistant and its responses appear.
+   - **Model and parameter settings**: where the model is selected and settings such as **temperature** are adjusted.
+4. Select an open-weight model, for example `openai/gpt-oss-20b` or `openai/gpt-oss-120b`. The models available change from time to time.
+
+> **Important:** the Groq Playground does not permanently save system prompts or conversations, and it does not create a shareable link. Copy **every version** of the system prompt, and the key responses, into the shared Google Doc as you work. The final demonstration is given from a team laptop.
 
 ## Step 1: Define the assistant
 
@@ -54,12 +67,11 @@ User: [example question]
 Assistant: [example of an ideal response]
 ```
 
-**Creating the assistant on HuggingChat:**
-1. Go to https://huggingface.co/chat/assistants and select **Create new assistant**.
-2. Enter a name, description and avatar.
-3. **Select a model.** Choose an open-weight model such as Llama or Qwen.
-4. Paste the system prompt into the **Instructions (system prompt)** field.
-5. Add three or four example starter questions, then select **Create**.
+**Loading the assistant into the Groq Playground:**
+1. Paste the completed system prompt into the **System** field.
+2. Confirm the selected model, and leave temperature at its default value for the first version.
+3. Send a simple greeting in the conversation panel to confirm the assistant responds in its defined role.
+4. Save this version in the shared Google Doc, labelled **v1**, together with the model name and temperature used.
 
 ## Step 3: Test the assistant
 
@@ -68,11 +80,14 @@ Before testing, write **10 test questions** in the shared document:
 - **3 difficult questions**: ambiguous, very long, or in another language
 - **2 off-topic questions**: unrelated to the assistant's purpose
 
-For each question, record a rating (Good / Acceptable / Poor) and the reason.
+**Testing procedure:**
+- Clear the conversation before each test question, so that earlier messages do not affect the response.
+- Keep the model and temperature the same for every test of a given version.
+- For each question, record a rating (Good / Acceptable / Poor) and the reason.
 
 ## Step 4: Improve the assistant
 
-**Revise the system prompt** to address every response rated Poor, then re-test. Record each version:
+**Revise the system prompt** to address every response rated Poor, then re-run the test questions. Record each version:
 
 | Version | Change made | Improvement observed | Remaining issues |
 |---|---|---|---|
@@ -102,18 +117,18 @@ Record **three attempts**, whether each succeeded, and the change made to the sy
 3. **Robustness:** the most effective red-teaming attempt and the correction made
 4. Key lessons learned about writing instructions for AI
 
-**Live demonstration:** share the assistant's link, or a QR code (in Chrome, right-click the page and select "Create QR code"), so the judges can use it on their own devices.
+**Live demonstration:** before presenting, load the final system prompt into the Groq Playground on the presentation laptop and clear the conversation. During the demonstration, invite a judge or audience member to type a question into the conversation panel.
 
 ---
 
 ## Optional extensions
-- **Model comparison:** apply the same system prompt to two different models and compare how well each follows the rules.
+- **Model comparison:** apply the same system prompt to two different models in the Playground (for example `openai/gpt-oss-20b` and `openai/gpt-oss-120b`) and compare how well each follows the rules.
+- **Temperature comparison:** run the same question at temperature 0 and at a high value, and record how the responses differ in consistency and accuracy.
 - **Effect of examples:** compare the assistant's behaviour with and without the example interaction in the system prompt.
-- **Assistant-to-assistant testing:** create a second assistant that acts as a demanding user, and pass messages between the two.
-- **Tools:** if HuggingChat offers tools for assistants (such as web search), enable one and assess its effect.
+- **Assistant-to-assistant testing:** open a second Playground tab with a system prompt for a demanding user, and pass messages between the two tabs.
 
 ## Deliverables checklist
-- [ ] A working assistant available to the judges
-- [ ] System prompt version history (v1 to final), with the improvements observed
+- [ ] A working assistant, demonstrated live in the Groq Playground
+- [ ] System prompt version history (v1 to final), with the model and temperature used and the improvements observed
 - [ ] Three red-teaming attempts and the corrections made
 - [ ] One key lesson about writing instructions for AI

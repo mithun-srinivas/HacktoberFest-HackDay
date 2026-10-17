@@ -1,100 +1,62 @@
-# Hacktoberfest Hack Day: Problem Statements
+# Hacktoberfest Hack Day: Themes
 
 **Theme:** Open-Source AI and Open-Weight Models
 
-Each team of 2–4 participants selects **one** of the problem statements below. Every project must end with a working demonstration.
+Each team of **4–6 participants** selects **one** of the three themes below. Every project must end with a presentation and a live demonstration at the showcase.
 
-Participants with no prior coding experience are encouraged to choose Problem 1, 2 or 3.
-
-| No. | Problem Statement | Level | Coding required | Account or key needed | Full details | Starter material |
+| No. | Theme | Level | Coding required | Platform | Full details | Starter material |
 |---|---|---|---|---|---|---|
-| 1 | Open Model Showdown | Foundation | None | None | [Problem statement](problem-statements/01_open_model_showdown.md) | [Worksheet](worksheets/01_open_model_showdown.md) |
-| 2 | Build-a-Bot | Foundation | None | Free GroqCloud account | [Problem statement](problem-statements/02_build_a_bot.md) | [Worksheet](worksheets/02_build_a_bot.md) |
-| 3 | Persona Chatbot | Beginner | Edit text and settings | Free Groq API key | [Problem statement](problem-statements/03_persona_chatbot.md) | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/03_persona_chatbot.ipynb) |
-| 4 | Image Classifier | Beginner | Edit lists and settings | None | [Problem statement](problem-statements/04_image_classifier.md) | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/04_image_classifier.ipynb) |
-| 5 | Document Question Answering | Intermediate | Read and modify a short program | Free Groq API key | [Problem statement](problem-statements/05_document_question_answering.md) | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/05_document_question_answering.ipynb) |
+| 1 | Open Model Evaluation | Beginner | None | Groq Playground, Google AI Studio | [Problem statement](problem-statements/01_model_evaluation.md) | [Worksheet](worksheets/01_model_evaluation.md) |
+| 2 | RAG Application with Gemma | Intermediate | Python | Google Colab (T4 GPU) | [Problem statement](problem-statements/02_rag_application.md) | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/02_rag_starter_kit.ipynb) |
+| 3 | Fine-Tuning Gemma | Advanced | Python | Google Colab (T4 GPU), Unsloth | [Problem statement](problem-statements/03_fine_tuning.md) | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/03_fine_tuning_starter_kit.ipynb) |
 
-### Levels
+Themes 2 and 3 each offer **two problem statements**. Teams choosing these themes select one problem statement within the theme.
 
-| Level | What it involves |
-|---|---|
-| Foundation | No coding. Work is done using free web tools. |
-| Beginner | Modify text and settings in starter code that already works. |
-| Intermediate | Read and modify a multi-step program. |
-
-**All teams need:** a laptop with a web browser and a Google account. A free Groq account or API key can be created at console.groq.com; instructions are included in the worksheet or notebook.
+**All teams need:** a laptop with a web browser and a Google account. Theme 1 also requires a free GroqCloud account (console.groq.com).
 
 ---
 
-## 1. Open Model Showdown
+## 1. Open Model Evaluation
 
-**Level:** Foundation (no coding)
+**Level:** Beginner (no coding)
 
-**What you will do:** Compare three free, open AI models in a fair test. Write 10 questions on a theme of your choice, score every answer using a simple rubric, and present which model performed best and why.
-
-**Tools:** HuggingChat (huggingface.co/chat), LMArena (lmarena.ai), Google Sheets, Google Slides.
+**What you will do:** Research and evaluate at least four open-weight models (OpenAI gpt-oss, Alibaba Qwen and Google Gemma 4) using the Groq Playground and Google AI Studio. Read each model's documentation, design a structured evaluation across several categories, score the models fairly, and recommend which model suits which application.
 
 **What you will present:**
-- Your completed scorecard (10 questions × 3 models)
-- The overall result, notable errors, and one unexpected finding
-- A live comparison using a question suggested by the audience
+- A model fact sheet and a completed scorecard
+- An analysis of strengths, weaknesses and failure patterns
+- Recommendations, and a live comparison using a prompt from the audience
 
 ---
 
-## 2. Build-a-Bot
-
-**Level:** Foundation (no coding)
-
-**What you will do:** Design your own AI assistant for one specific purpose and audience by writing its instructions (the system prompt) in the Groq Playground. Test it, improve it over at least three versions, and try to make it fail so that you can fix its weaknesses.
-
-**Tools:** Groq Playground (console.groq.com/playground) and a shared document for recording each version.
-
-**What you will present:**
-- Your assistant, demonstrated live in the Groq Playground
-- Responses from the first and final versions to the same question
-- Three attempts to make the assistant fail, and how you corrected them
-
----
-
-## 3. Persona Chatbot
-
-**Level:** Beginner
-
-**What you will do:** Start from a chatbot web application that already works and turn it into a chatbot with your own character and purpose. Change its instructions, example questions and settings, then share it through a public link.
-
-**Tools:** Google Colab, Python, Gradio, Groq API (open-weight model `openai/gpt-oss-20b`).
-
-**What you will present:**
-- Your chatbot, available through a public link that the audience can open
-- A persona that stays consistent for at least five exchanges
-- A short explanation of what a system prompt and temperature are, with a demonstration
-
----
-
-## 4. Image Classifier
-
-**Level:** Beginner
-
-**What you will do:** Build a web application that identifies what is in a photo, choosing from a list of categories that you define. The open-weight model runs inside Google Colab, so no API key is needed. Improve the category wording and measure how accurate the application is.
-
-**Tools:** Google Colab, Python, Gradio, Hugging Face `transformers`, open-weight model CLIP.
-
-**What you will present:**
-- A live demonstration using a webcam or phone photo
-- Accuracy results on 10 test photos, before and after your improvements
-- A short explanation of zero-shot classification
-
----
-
-## 5. Document Question Answering
+## 2. RAG Application with Gemma
 
 **Level:** Intermediate
 
-**What you will do:** Build a web application that answers questions about an uploaded PDF (such as a course syllabus) using only the content of that document, and shows the page number for each answer. This technique is called Retrieval-Augmented Generation (RAG).
+**What you will do:** Start from a working Retrieval-Augmented Generation (RAG) application built on Google's open-weight Gemma 4 model, running in Google Colab. Adapt and extend it so that it answers questions from documents with citations and declines questions the documents do not cover.
 
-**Tools:** Google Colab, Python, Gradio, `pypdf`, `sentence-transformers`, Groq API.
+**Problem statements (choose one):**
+- **2A. Campus Regulations Assistant:** answer students' questions about college rules, using official handbooks and regulations, with document and page citations.
+- **2B. Open-Source Contributor Guide:** help newcomers start contributing to a real open-source project, using its README, contributing guide and other documentation.
 
 **What you will present:**
-- A live demonstration with a real PDF and correct page references
-- The passages the application retrieved, used to explain how RAG works
-- A question that is not covered by the document, which the application declines to answer
+- A working application demonstrated with your own documents
+- An evaluation of answer quality on a test set of questions
+- An explanation of your pipeline and design decisions, with bonus features where completed
+
+---
+
+## 3. Fine-Tuning Gemma
+
+**Level:** Advanced
+
+**What you will do:** Measure the plain Gemma 4 model on your chosen problem, fine-tune it with LoRA using Unsloth on a free Colab GPU, build an application around the fine-tuned model, and compare the plain and fine-tuned models.
+
+**Problem statements (choose one):**
+- **3A. Teach Gemma to Understand Code-Mixed Regional Languages:** fine-tune Gemma to convert between English, regional-script text and informal romanized text in Kannada or Hindi, using AI4Bharat IndicCMix (requires a free Hugging Face account).
+- **3B. Extract Information from Receipts:** fine-tune Gemma on images to extract the merchant, date, address and total from receipt images, using ICDAR 2019 SROIE.
+
+**What you will present:**
+- A fine-tuned model, with the dataset and training settings documented
+- A comparative analysis of the plain and fine-tuned models on the same test set
+- A working application built around the fine-tuned model

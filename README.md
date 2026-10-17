@@ -1,26 +1,39 @@
 # Hacktoberfest Hack Day: Open-Source AI
 
-Welcome to the Hacktoberfest Hack Day. The theme is **open-source AI and open-weight models**. All tools and models used are free, and the coding projects run in **Google Colab**, so nothing needs to be installed.
+Welcome to the Hacktoberfest Hack Day. The theme is **open-source AI and open-weight models**. All tools and models used are free. The coding themes run in **Google Colab**, so nothing needs to be installed.
 
-## Choose a problem statement
+## Event Schedule
 
-See **[PROBLEM_STATEMENTS.md](PROBLEM_STATEMENTS.md)** for the full list. Each team of 2–4 participants selects one.
+| Time | Session |
+|-------|---------|
+| 8:00 AM – 8:30 AM | Inauguration & Welcome |
+| 8:30 AM – 10:00 AM | Guest Sessions: Open Source Awareness |
+| 10:00 AM – 10:30 AM | Theme Selection & Team Formation (teams of 4–6 members) |
+| 10:30 AM – 6:30 PM | Hacking |
+| 6:30 PM – 8:00 PM | Showcase |
+| 8:00 PM – 8:30 PM | Winner Announcement & Wind-up Ceremony |
 
-| No. | Problem Statement | Level | Starter material |
+*Schedule is approximate and may shift slightly on the day.*
+
+## Choose a theme
+
+See **[PROBLEM_STATEMENTS.md](PROBLEM_STATEMENTS.md)** for full details. Each team of 4–6 participants selects one theme.
+
+| No. | Theme | Level | Starter material |
 |---|---|---|---|
-| 1 | [Open Model Showdown](problem-statements/01_open_model_showdown.md) | Foundation (no coding) | [Worksheet](worksheets/01_open_model_showdown.md) |
-| 2 | [Build-a-Bot](problem-statements/02_build_a_bot.md) | Foundation (no coding) | [Worksheet](worksheets/02_build_a_bot.md) |
-| 3 | [Persona Chatbot](problem-statements/03_persona_chatbot.md) | Beginner | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/03_persona_chatbot.ipynb) |
-| 4 | [Image Classifier](problem-statements/04_image_classifier.md) | Beginner | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/04_image_classifier.ipynb) |
-| 5 | [Document Question Answering](problem-statements/05_document_question_answering.md) | Intermediate | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/05_document_question_answering.ipynb) |
+| 1 | [Open Model Evaluation](problem-statements/01_model_evaluation.md) | Beginner (no coding) | [Worksheet](worksheets/01_model_evaluation.md) |
+| 2 | [RAG Application with Gemma](problem-statements/02_rag_application.md) | Intermediate | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/02_rag_starter_kit.ipynb) |
+| 3 | [Fine-Tuning Gemma](problem-statements/03_fine_tuning.md) | Advanced | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/03_fine_tuning_starter_kit.ipynb) |
 
 ## Getting started
 
-**Problems 1 and 2 (no coding):** open the worksheet for your problem and follow the steps.
+**Theme 1 (no coding):** open the worksheet and follow the steps. You will need a Google account and a free GroqCloud account (console.groq.com).
 
-**Problems 3, 4 and 5 (Google Colab):**
-1. Select **Open in Colab** for your problem in the table above, and sign in with a Google account.
+**Themes 2 and 3 (Google Colab):**
+1. Select **Open in Colab** for your theme in the table above, and sign in with a Google account.
 2. Select **File → Save a copy in Drive** so that your changes are saved.
-3. For Problems 3 and 5, create a free API key at **console.groq.com** and add it in the Colab **Secrets** panel under the name `GROQ_API_KEY`. The notebook explains each step. Until a key is added, the notebook runs in demonstration mode.
-4. Run the cells in order from top to bottom (**Shift + Enter**). The application appears at the end of the notebook, together with a public link.
+3. Select **Runtime → Change runtime type → T4 GPU → Save**.
+4. Run the cells in order from top to bottom (**Shift + Enter**). The first run installs the libraries and downloads the Gemma model, which takes a few minutes.
 5. Make your changes at the points marked **STUDENT TODO**.
+
+No API key is needed for Themes 2 and 3. Gemma 4 runs inside the notebook.

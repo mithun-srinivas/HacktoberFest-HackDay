@@ -32,8 +32,8 @@ See **[PROBLEM_STATEMENTS.md](PROBLEM_STATEMENTS.md)** for full details. Each te
 **Themes 2 and 3 (Google Colab):**
 1. Select **Open in Colab** for your theme in the table above, and sign in with a Google account.
 2. Select **File → Save a copy in Drive** so that your changes are saved.
-3. Select **Runtime → Change runtime type → T4 GPU → Save**.
-4. Run the cells in order from top to bottom (**Shift + Enter**). The first run installs the libraries and downloads the Gemma model, which takes a few minutes.
+3. Set up the runtime for your theme:
+   - **Theme 2:** no GPU is needed. Create a free API key at **aistudio.google.com/apikey** and add it in the Colab **Secrets** panel (key icon, left sidebar) under the name `GOOGLE_API_KEY`, with Notebook access enabled.
+   - **Theme 3:** select **Runtime → Change runtime type → T4 GPU → Save**. No API key is needed; Gemma 4 runs inside the notebook.
+4. Run the cells in order from top to bottom (**Shift + Enter**). The first run installs the required libraries and downloads the models, which takes a few minutes.
 5. Make your changes at the points marked **STUDENT TODO**.
-
-No API key is needed for Themes 2 and 3. Gemma 4 runs inside the notebook.

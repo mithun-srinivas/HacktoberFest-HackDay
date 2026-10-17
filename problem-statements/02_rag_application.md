@@ -4,7 +4,7 @@
 |---|---|
 | **Level** | Intermediate |
 | **Team size** | 4–6 participants |
-| **Platform** | Google Colab (free T4 GPU) |
+| **Platform** | Google Colab (no GPU required) and a free Google AI Studio API key |
 | **Starter kit** | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/02_rag_starter_kit.ipynb) |
 
 ---
@@ -23,8 +23,8 @@ Using the starter kit, build a RAG application with Google's open-weight **Gemma
 
 The starter kit is a complete, working Colab notebook containing:
 
-- **Gemma 4 E2B** running in the notebook (no API key required)
-- An open-weight embedding model (`all-MiniLM-L6-v2`)
+- **Gemma 4** (`gemma-4-26b-a4b-it`), accessed through the free Google AI Studio API
+- An open-weight embedding model (`all-MiniLM-L6-v2`) running in the notebook
 - A RAG pipeline: PDF reading, chunking, embedding, retrieval and cited answer generation
 - A Gradio web application with a public link, which displays the retrieved passages
 - A sample document, so that the application works immediately
@@ -78,7 +78,8 @@ The starter kit is a complete, working Colab notebook containing:
 ## 6. Requirements
 
 - A laptop with a web browser and a Google account
-- The starter kit, opened in Google Colab with a **T4 GPU** runtime
+- The starter kit, opened in Google Colab (the default CPU runtime is sufficient)
+- A free Google AI Studio API key from aistudio.google.com/apikey (one per team member is recommended, to share the usage limits)
 - Text-based PDF documents relevant to the use case (scanned image-only documents are not supported)
 
 ## 7. Expected Deliverables
@@ -99,7 +100,7 @@ At the showcase, the team must present:
 - **Multiple documents:** support several documents, with the document name in each citation.
 - **Relevance threshold:** decline to answer when no passage is sufficiently relevant.
 - **Conversation memory:** support follow-up questions.
-- **Model comparison:** compare Gemma 4 E2B with Gemma 4 E4B on quality and speed.
+- **Model comparison:** compare Gemma 4 26B A4B with Gemma 4 31B on answer quality and speed.
 - **Improved retrieval:** for example, re-ranking retrieved passages or combining keyword and semantic search.
 - **User experience:** a polished interface designed for the intended users.
 - **2A only:** detect when two documents give conflicting information, and show both passages.

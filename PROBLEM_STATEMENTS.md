@@ -7,12 +7,12 @@ Each team of **4–6 participants** selects **one** of the three themes below. E
 | No. | Theme | Level | Coding required | Platform | Full details | Starter material |
 |---|---|---|---|---|---|---|
 | 1 | Open Model Evaluation | Beginner | None | Groq Playground, Google AI Studio | [Problem statement](problem-statements/01_model_evaluation.md) | [Worksheet](worksheets/01_model_evaluation.md) |
-| 2 | RAG Application with Gemma | Intermediate | Python | Google Colab (T4 GPU) | [Problem statement](problem-statements/02_rag_application.md) | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/02_rag_starter_kit.ipynb) |
+| 2 | RAG Application with Gemma | Intermediate | Python | Google Colab (no GPU), Google AI Studio API | [Problem statement](problem-statements/02_rag_application.md) | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/02_rag_starter_kit.ipynb) |
 | 3 | Fine-Tuning Gemma | Advanced | Python | Google Colab (T4 GPU), Unsloth | [Problem statement](problem-statements/03_fine_tuning.md) | [Open in Colab](https://colab.research.google.com/github/mithun-srinivas/HacktoberFest-HackDay/blob/main/templates/03_fine_tuning_starter_kit.ipynb) |
 
 Themes 2 and 3 each offer **two problem statements**. Teams choosing these themes select one problem statement within the theme.
 
-**All teams need:** a laptop with a web browser and a Google account. Theme 1 also requires a free GroqCloud account (console.groq.com).
+**All teams need:** a laptop with a web browser and a Google account. Theme 1 also requires a free GroqCloud account (console.groq.com). Theme 2 requires a free Google AI Studio API key (aistudio.google.com/apikey).
 
 ---
 
@@ -33,7 +33,7 @@ Themes 2 and 3 each offer **two problem statements**. Teams choosing these theme
 
 **Level:** Intermediate
 
-**What you will do:** Start from a working Retrieval-Augmented Generation (RAG) application built on Google's open-weight Gemma 4 model, running in Google Colab. Adapt and extend it so that it answers questions from documents with citations and declines questions the documents do not cover.
+**What you will do:** Start from a working Retrieval-Augmented Generation (RAG) application built on Google's open-weight Gemma 4 model, accessed through the free Google AI Studio API from Google Colab. Adapt and extend it so that it answers questions from documents with citations and declines questions the documents do not cover.
 
 **Problem statements (choose one):**
 - **2A. Campus Regulations Assistant:** answer students' questions about college rules, using official handbooks and regulations, with document and page citations.

@@ -2,19 +2,6 @@
 
 Welcome to the Hacktoberfest Hack Day. The theme is **open-source AI and open-weight models**. All tools and models used are free. The coding themes run in **Google Colab**, so nothing needs to be installed.
 
-## Event Schedule
-
-| Time | Session |
-|-------|---------|
-| 8:00 AM – 8:30 AM | Inauguration & Welcome |
-| 8:30 AM – 10:00 AM | Guest Sessions: Open Source Awareness |
-| 10:00 AM – 10:30 AM | Theme Selection & Team Formation (teams of 4–6 members) |
-| 10:30 AM – 6:30 PM | Hacking |
-| 6:30 PM – 8:00 PM | Showcase |
-| 8:00 PM – 8:30 PM | Winner Announcement & Wind-up Ceremony |
-
-*Schedule is approximate and may shift slightly on the day.*
-
 ## Choose a theme
 
 See **[PROBLEM_STATEMENTS.md](PROBLEM_STATEMENTS.md)** for full details. Each team of 4–6 participants selects one theme.

@@ -97,3 +97,23 @@ Record the settings used (system prompt and temperature) at the top of the sprea
 6. Recommendations
 
 **Live demonstration:** ask the audience for a prompt, run it on two models, and discuss the differences.
+
+## Deliverable 2: Evaluation Design & Scoring Rubric
+
+### A. Scoring Rubric (0 to 5 Scale)
+* *5 - Flawless:* Perfectly accurate, fully adheres to instructions/formatting, correct logic/code, natural phrasing.
+* *4 - Good:* Correct core answer with minor style or formatting flaws.
+* *3 - Acceptable:* Factually correct but incomplete, or includes minor extraneous hallucinations/logic flaws.
+* *2 - Marginal:* Partial understanding; misses major constraint, contains noticeable errors.
+* *1 - Poor:* Fails instruction following, incorrect logic/math, or significant factual hallucination.
+* *0 - Critical Failure:* Off-topic, unsafe output, complete refusal on safe prompt, or gibberish.
+
+### B. Evaluation Test Results
+
+| Prompt ID | Category | Test Prompt | Model | Score (0-5) | Observations & Failures |
+|---|---|---|---|---|---|
+| P01 | Reasoning & Math | If a train travels 60 miles in 45 minutes, what is its speed in mph? | gpt-oss-20b | | |
+| P02 | Reasoning & Math | If a train travels 60 miles in 45 minutes, what is its speed in mph? | gpt-oss-120b | | |
+| P03 | Reasoning & Math | If a train travels 60 miles in 45 minutes, what is its speed in mph? | Qwen 3.8 27B | | |
+| P04 | Reasoning & Math | If a train travels 60 miles in 45 minutes, what is its speed in mph? | Gemma 4 31B | | |
+| P05 | Reasoning & Math | If a train travels 60 miles in 45 minutes, what is its speed in mph? | Gemma 4 26B A4B | | |
